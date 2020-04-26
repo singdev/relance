@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réponses, relance après covid19</title>
+    <style>
+        /*color1: #CBC600*/
+        /*color2: #940051*/
+        /*color2: #007190*/
+        @font-face {
+            font-family: "Galano Classic Alt W00 Black";
+            src: url("font/b0243700275afd52c5bb425c92e03368.eot");
+            /* IE9*/
+            src: url("font/b0243700275afd52c5bb425c92e03368.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("font/b0243700275afd52c5bb425c92e03368.woff2") format("woff2"),
+                /* chrome、firefox */
+                url("font/b0243700275afd52c5bb425c92e03368.woff") format("woff"),
+                /* chrome、firefox */
+                url("font/b0243700275afd52c5bb425c92e03368.ttf") format("truetype"),
+                /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                url("font/b0243700275afd52c5bb425c92e03368.svg#Galano Classic Alt W00 Black") format("svg");
+            /* iOS 4.1- */
+        }
+
+        @font-face {
+            font-family: "Galano Classic Alt W00 Thin";
+            src: url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.eot");
+            /* IE9*/
+            src: url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.woff2") format("woff2"),
+                /* chrome、firefox */
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.woff") format("woff"),
+                /* chrome、firefox */
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.ttf") format("truetype"),
+                /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.svg#Galano Classic Alt W00 Thin") format("svg");
+            /* iOS 4.1- */
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Galano Classic Alt W00 Thin", sans-serif;
+            font-weight: bold;
+            scroll-behavior: smooth;
+        }
+
+        .relance {
+            padding: 24px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .relance:hover {
+            cursor: pointer;
+        }
+
+        .relance-form {
+            padding: 16px;
+        }
+
+        .response {
+            color: #007190;
+            font-family: "Galano Classic Alt W00 Black", sans-serif;
+        }
+
+        .relance h1 {
+            font-family: "Galano Classic Alt W00 Black", sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            color: #940051;
+        }
+
+        .relance p {
+            font-size: 14px;
+        }
+
+        .response-container {
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        a {
+            margin: 20px;
+            color: black;
+            background-color: #CBC600;
+            padding: 16px;
+            border-radius: 8px;
+
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        @media screen and (max-width: 500px){
+            main {
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="relance-list">
+
+        </div>
+
+        <div class="response-container">
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
